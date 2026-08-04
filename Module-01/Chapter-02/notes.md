@@ -3,26 +3,26 @@
 ## Filtering
 Filtering is a concept in SQL that answers the question "Which rows do I want". It doesn't matter if the data needed is in between rows or it's at the end of a database with 100 rows, filtering would extract the row as far as it checks the condition. Business questions like "What products are out of stock?" or "Where do most of our remote workers live?" or "Which students are in Computer Science?" need the filtering concept to get their answer.
 
-### "Why Business Use Filtering"
+### "Why Businesses Use Filtering"
 - To find specific customers or products.
 - To identofy high-performing or low-performing records.
-- To detect probblems e.g. overdue payments, low inventory.
+- To detect problems e.g. overdue payments, low inventory.
 - To create targeted reports.
 - To support data-driven decision-making.
 
 ---
 
 ## Sorting
-While filtering answers "what rows do I want?", sorting on the other hand answers the question "In what order do I want them?". This concept helps to rearrange rows after they've been sorted out. It could be rearranged in alphabetical order or descending order. Business questions sorting answer could be "Who are our highest paid employees?" or "What products are the cheapest?" or "Which students habe the highest GPA?".
+While filtering answers "What rows do I want?", sorting on the other hand answers the question "In what order do I want them?". This concept helps to rearrange rows after they've been sorted out. It could be rearranged in alphabetical order or descending order. Queries that use sorting answer business questions like "Who are our highest paid employees?" or "What products are the cheapest?" or "Which students have the highest GPA?".
 
-### "Why Business Use Sorting"
+### "Why Businesses Use Sorting"
 - To identify top performers.
-= To prioritize important records.
+- To prioritize important records.
 - To spot trends and patterns.
 - To improve decision-making.
 - To improve readability.
 
-Filtering and Sorting are important aspects of data because it helps with analysis and research.
+Filtering and Sorting are important aspects of data because they help with analysis and research.
 
 ---
 
@@ -35,7 +35,7 @@ FROM goals
 WhERE status = 'active';
 ```
 
-The above SQL query only returns rows whose status are active. Simple and easy. Rather than skimming hundreds of rows which would take hours using a human, this simple SQL function helps to make jobs easier.
+The above SQL query only returns rows whose status are active. Simple and easy. Rather than skimming hundreds of rows which would take hours, this simple SQL function helps to make jobs easier.
 
 ---
 
@@ -51,7 +51,7 @@ ORDER BY created_at;
 Select all the columns from the table "goals" and arrange them in ascending order using the column "created_at".
 
 ### DESC
-DESC stands for ordering in DESCending order. Using just ORDER BY automatically assumes you want your result in ascending order. So DESC order gives the opposite result.
+DESC stands for ordering in DESCending order. ORDER BY automatically assumes you want your result in ascending order. So DESC order gives the opposite result.
 
 ```sql
 SELECT *
@@ -133,9 +133,9 @@ Select all columns from the table "goals", extract the rows that start with "ech
 
 ## Common Errors I Encountered
 
-### Issue 1: Can one SQL file use tables created in another SQL file?
+## Issue 1: Can one SQL file use tables created in another SQL file?
 
-#### My question: "I have a separate .sql file for each chapter. Chapter 2 depends on the tables created in Chapter 1. How do I connect them?"
+### My question: "I have a separate .sql file for each chapter. Chapter 2 depends on the tables created in Chapter 1. How do I connect them?"
 
 ### What I thought
 I thought SQL files somehow needed to be "linked" together.
@@ -191,8 +191,8 @@ instead of creating new databases.
 ## Notes From Today's Lesson
 
 #### - Never forget to add a semicolon after every complete query. 
-#### - Also remember that space is also considered as a character.
-#### - Order Of Functions in SQL: FROM >> WHERE >> GROUP BY >> HAVING >> SELECT >> ORDER BY >> LIMIT.
+#### - Also remember that space is considered as a character.
+#### - Order of functions in SQL: FROM >> WHERE >> GROUP BY >> HAVING >> SELECT >> ORDER BY >> LIMIT.
 
 ---
 
