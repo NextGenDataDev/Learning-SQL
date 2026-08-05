@@ -207,7 +207,7 @@ instead of creating new databases.
 
 ---
 
-## Interview Questions
+## Random Questions
 
 ### Q1. What's the difference between WHERE and ORDER BY?
 WHERE filters rows.
